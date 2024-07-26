@@ -49,17 +49,17 @@ const ProjectsPage: React.FC = () => {
 
  return (
   <div className="min-h-screen bg-gray-100 p-8">
-    <h1 className="text-4xl font-bold text-center mb-8">Projects</h1>
+    <h1 className="text-4xl font-bold text-center mb-8 font-montserrat">Projects</h1>
     <div className="flex flex-wrap justify-center gap-8">
       {projects.map((project, index) => (
-        <div key={index} className="bg-white p-6 rounded-lg shadow-md max-w-xs">
+        <div key={index} className="bg-white p-6 rounded-lg shadow-md max-w-xs font-montserrat">
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-full h-40 object-cover rounded-md mb-4"
+            className="w-full h-40 object-cover rounded-md mb-4 font-montserrat"
           />
-          <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-          <p className="text-gray-700 mb-4">{project.description}</p>
+          <h2 className="text-xl font-semibold mb-2 font-montserrat">{project.title}</h2>
+          <p className="text-gray-700 mb-4 font-montserrat">{project.description}</p>
           <div className="flex gap-4">
             <a
               href={project.liveUrl}
