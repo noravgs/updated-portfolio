@@ -1,7 +1,7 @@
-import Intro from "./pages/Intro";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-// import Gallery from "./pages/Gallery";
+import Intro from "./pages/intro";
+import Skills from "./pages/skills";
+import Projects from "./pages/projects";
+// import Gallery from "./pages/gallery";
 import '../styles/globals.css'
 
 export default function Home() {
