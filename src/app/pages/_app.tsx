@@ -1,8 +1,14 @@
-// src/pages/_app.tsx
 import { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import '../styles/globals.css';
+
+// Extend the Window interface for TypeScript
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -20,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag; // Set gtag function on window
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
           `,
