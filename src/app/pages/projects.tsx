@@ -22,8 +22,8 @@ const ProjectsPage: React.FC = () => {
       title: 'Business Boost',
       description: 'A full-stack application designed to support and promote local businesses. It provides a platform for sharing and discovering small businesses while offering valuable resources and tools for aspiring entrepreneurs looking to start their own ventures.',
       imageUrl: '/media/bbimg.png',
-      liveUrl: 'https://github.com/noravgs/business-boost',
-      codeUrl: 'https://business-boost.cyclic.app/',
+      liveUrl: '',
+      codeUrl: 'https://github.com/noravgs/business-boost',
     },
     {
       title: 'Geisha',
