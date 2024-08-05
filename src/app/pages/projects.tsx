@@ -9,14 +9,14 @@ const ProjectsPage: React.FC = () => {
       description: 'Leading B2B distributor and wholesaler specializing in pre-owned electronic devices. We offer a wide range of high-quality refurbished devices, ensuring reliability and value for businesses.',
       imageUrl: '/media/trillion.png',
       liveUrl: 'https://trillionnow.com',
-      codeUrl: '', // No code URL for this project
+      codeUrl: '', 
     },
     {
       title: 'talkTek',
       description: 'A B2C company specializing in the sale of pre-owned phones. The Shopify e-commerce platform offers a seamless shopping experience with detailed product listings, secure checkout, and comprehensive customer support, making it easy for consumers to find high-quality mobile devices.',
       imageUrl: '/media/talktek.png',
       liveUrl: 'https://talktek.com',
-      codeUrl: '', // No code URL for this project
+      codeUrl: '', 
     },
     {
       title: 'Business Boost',
@@ -70,14 +70,16 @@ const ProjectsPage: React.FC = () => {
               <h2 className="text-xl font-semibold mb-2 font-montserrat">{project.title}</h2>
               <p className="text-gray-700 mb-4 font-montserrat">{project.description}</p>
               <div className="flex gap-4">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-                >
-                  Live
-                </a>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                  >
+                    Live
+                  </a>
+                )}
                 {project.codeUrl && (
                   <a
                     href={project.codeUrl}
