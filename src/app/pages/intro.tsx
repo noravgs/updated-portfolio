@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-const IntroPage: React.FC = () => {
+export default function IntroPage(){
   return (
     <>
       <Head>
@@ -40,4 +40,3 @@ const IntroPage: React.FC = () => {
   );
 };
 
-export default IntroPage;

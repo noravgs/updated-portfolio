@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-const SkillsPage: React.FC = () => {
+export default function SkillsPage() {
   const frontendSkills = [
     { name: 'HTML', logo: '/media/HTML5_Logo_128.png' },
     { name: 'CSS', logo: '/media/css-3.png' },
@@ -67,4 +67,4 @@ const SkillsPage: React.FC = () => {
   );
 };
 
-export default SkillsPage;
+

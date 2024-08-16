@@ -2,8 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-const ProjectsPage: React.FC = () => {
+export default function ProjectsPage(){
   const projects = [
+    {
+      title: 'Algo Flashcards',
+      description: 'An AI-powered platform generating tailored flashcards to help you master algorithms and methods, adapting to your preferred programming language and progress.',
+      imageUrl: '/media/algocard.png',
+      liveUrl: 'https://algoarchive-flashcards-beta.vercel.app/',
+      codeUrl: 'https://github.com/lausan3/hs-dsa-flashcards', 
+    },
     {
       title: 'Trillion',
       description: 'Leading B2B distributor and wholesaler specializing in pre-owned electronic devices. We offer a wide range of high-quality refurbished devices, ensuring reliability and value for businesses.',
@@ -31,13 +38,6 @@ const ProjectsPage: React.FC = () => {
       imageUrl: '/media/geishaThum.png',
       liveUrl: 'https://geisha-beauty.webflow.io/',
       codeUrl: '',
-    },
-    {
-      title: 'Instant Cafe',
-      description: 'A React application for coffee enthusiasts, offering an easy-to-use interface for ordering and delivery. Features include real-time order tracking, menu customization, and quick checkout.',
-      imageUrl: '/media/instantimg.png',
-      liveUrl: 'https://instantcafe.netlify.app',
-      codeUrl: 'https://github.com/noravgs/instant-cafe',
     },
     {
       title: 'Monarch Salon',
@@ -99,4 +99,3 @@ const ProjectsPage: React.FC = () => {
   );
 };
 
-export default ProjectsPage;
